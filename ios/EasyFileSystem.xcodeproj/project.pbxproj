@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E75BFD72304518D0039837E /* EasyFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75BFD32304518D0039837E /* EasyFileSystem.m */; };
+		4E75BFD82304518D0039837E /* FilePermissionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75BFD62304518D0039837E /* FilePermissionModule.m */; };
 		B3E7B58A1CC2AC0600A0062D /* EasyFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* EasyFileSystem.m */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libEasyFileSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyFileSystem.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* EasyFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyFileSystem.h; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libEasyFileSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyFileSystem.a; path = "/var/www/react-native/react-native-easy-file-system/ios/build/Debug-iphoneos/libEasyFileSystem.a"; sourceTree = "<absolute>"; };
+		4E75BFD22304518D0039837E /* FileSystemPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemPermission.h; sourceTree = "<group>"; };
+		4E75BFD32304518D0039837E /* EasyFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyFileSystem.m; sourceTree = "<group>"; };
+		4E75BFD42304518D0039837E /* FilePermissionModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePermissionModule.h; sourceTree = "<group>"; };
+		4E75BFD52304518D0039837E /* EasyFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyFileSystem.h; sourceTree = "<group>"; };
+		4E75BFD62304518D0039837E /* FilePermissionModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilePermissionModule.m; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* EasyFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyFileSystem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,20 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		134814211AA4EA7D00B7C361 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				134814201AA4EA6300B7C361 /* libEasyFileSystem.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* EasyFileSystem.h */,
-				B3E7B5891CC2AC0600A0062D /* EasyFileSystem.m */,
-				134814211AA4EA7D00B7C361 /* Products */,
+				4E75BFD52304518D0039837E /* EasyFileSystem.h */,
+				4E75BFD32304518D0039837E /* EasyFileSystem.m */,
+				4E75BFD42304518D0039837E /* FilePermissionModule.h */,
+				4E75BFD62304518D0039837E /* FilePermissionModule.m */,
+				4E75BFD22304518D0039837E /* FileSystemPermission.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +95,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -112,6 +113,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E75BFD82304518D0039837E /* FilePermissionModule.m in Sources */,
+				4E75BFD72304518D0039837E /* EasyFileSystem.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* EasyFileSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
