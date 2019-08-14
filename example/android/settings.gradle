@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':react-native-easy-file-system'
+project(':react-native-easy-file-system').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-easy-file-system/android')
+
+include ':app'

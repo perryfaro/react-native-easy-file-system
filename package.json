@@ -1,0 +1,32 @@
+{
+  "name": "react-native-easy-file-system",
+  "title": "React Native Easy File System",
+  "version": "1.0.0",
+  "description": "Simple async download to filesystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perryfaro/react-native-easy-file-system.git",
+    "baseUrl": "https://github.com/perryfaro/react-native-easy-file-system"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Perry Faro"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.5.0",
+    "react-native": ">=0.57.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.5.0",
+    "react-native": "^0.59.4"
+  }
+}
